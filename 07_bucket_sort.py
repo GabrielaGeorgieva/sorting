@@ -17,7 +17,6 @@ def insertion_sort(array):
 def bucket_sort(array):
     buckets = [[] for _ in range(10)]  # make 10 buckets
     maximum = max(array)
-    minimum = min(array)
     divider = math.ceil((maximum + 1) / 10)  # take the next integer value
     for i in range(len(array)):
         bucket_index = int(math.floor(array[i]/divider))
